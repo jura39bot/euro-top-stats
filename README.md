@@ -23,10 +23,14 @@ Buteurs, passeurs, xG (Expected Goals), distance couverte (km), classements et r
 
 ## Sources de données
 
-| Source | Usage | Coût |
-|--------|-------|------|
-| [API-Football](https://api-sports.io/) | Résultats, classements, buteurs, passeurs, xG (match), km | Free (100 req/jour) |
-| [Understat.com](https://understat.com) | xG par match top 5 ligues | Gratuit (scraping) |
+| Source | Usage | Coût | Lib |
+|--------|-------|------|-----|
+| [API-Football](https://api-sports.io/) | Résultats, classements, buteurs, passeurs, xG (saisons ≤ 2024) | Free (100 req/jour) | `httpx` |
+| [Understat.com](https://understat.com) | xG par match, top 5 ligues, **saison courante incluse** | Gratuit | `understatapi` |
+| [Sofascore](https://www.sofascore.com) | xG + stats match toutes compétitions, résultats temps réel | Gratuit (API non officielle) | `requests` |
+
+> ⚠️ **Saison courante (2025-2026)** : API-Football free plan bloqué sur saison ≤ 2024.
+> Utiliser **Understat** (xG) ou **Sofascore** (xG + stats) pour la saison courante.
 
 ---
 
@@ -205,9 +209,11 @@ euro-top-stats/
 ## Limites
 
 - **API-Football free** : 100 req/jour — suffisant pour classements + buteurs + passeurs (≈32 req pour les 8 ligues)
+  - ⚠️ Saison courante (2025-2026) **non accessible** en plan free — utiliser Understat ou Sofascore
 - **xG par match** (`--stats`) : 1 req/match → à utiliser avec parcimonie (5-10 matchs max par run)
-- **Distance (km)** : disponible uniquement via `--stats` (API par match) ou certains plans payants
-- **Understat** : xG gratuit mais **top 5 ligues uniquement** (pas CL/EL/ECL)
+- **Distance (km) totale** : non disponible gratuitement (donnée Opta/tracking GPS, hors portée des APIs libres)
+- **Understat** : xG gratuit, saison courante ✅ — **top 5 ligues uniquement** (pas CL/EL/ECL)
+- **Sofascore** : API non officielle, peut changer sans préavis — préférer Understat pour les données de saison
 
 ---
 

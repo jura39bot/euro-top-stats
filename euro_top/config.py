@@ -8,7 +8,7 @@ load_dotenv()
 API_FOOTBALL_KEY = os.getenv("API_FOOTBALL_KEY", "")
 API_FOOTBALL_BASE = "https://v3.football.api-sports.io"
 DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./euro_top.db")
-SEASON = int(os.getenv("SEASON", "2024"))
+SEASON = int(os.getenv("SEASON", "2025"))
 
 # Limite journalière API-Football (free = 100, on prend de la marge)
 API_DAILY_LIMIT = 90

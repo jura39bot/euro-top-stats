@@ -1,121 +1,200 @@
 """
-Collecteur xG alternatif — plusieurs sources tentées.
+Collecteur xG — Understat.com via understatapi.
 
-Understat.com a migré ses données vers un rendu JS dynamique (mars 2026),
-le scraping statique ne fonctionne plus.
+Understat fournit les xG par match pour les top 5 ligues européennes,
+saison courante incluse (2025-2026).
 
-Sources utilisées ici :
-1. football-data.co.uk — CSV gratuits (résultats + stats de base, pas de xG)
-2. API-Football /fixtures/statistics — xG par match (via api_football.py, 1 req/match)
-3. Stub understat conservé pour compatibilité future (ex: ajout selenium)
+Source : https://understat.com  |  Lib : https://pypi.org/project/understatapi/
 
-Pour les xG riches, utiliser :
-    euro-top collect --stats --last 10
-(appelle API-Football /fixtures/statistics)
+Installation :
+    pip install understatapi
+
+Pas de clé API requise. Pas de quota. 100 % gratuit.
 """
 from __future__ import annotations
-import csv
-import io
+
 import logging
-import time
 from datetime import date, datetime
 from typing import Optional
-
-import requests
 
 from ..config import SEASON
 from ..db import Session, upsert_matches
 
 logger = logging.getLogger(__name__)
 
-HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
-        "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-    )
-}
-
-# ── football-data.co.uk ───────────────────────────────────────────────────────
-# CSV gratuits (pas de xG, mais stats complètes : tirs, corners, fautes…)
-
-FDCO_URLS: dict[str, dict[int, str]] = {
-    "Ligue_1": {
-        2024: "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
-        2023: "https://www.football-data.co.uk/mmz4281/2324/F1.csv",
-    },
-    "EPL": {
-        2024: "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
-        2023: "https://www.football-data.co.uk/mmz4281/2324/E0.csv",
-    },
-    "La_liga": {
-        2024: "https://www.football-data.co.uk/mmz4281/2425/SP1.csv",
-        2023: "https://www.football-data.co.uk/mmz4281/2324/SP1.csv",
-    },
-    "Serie_A": {
-        2024: "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
-        2023: "https://www.football-data.co.uk/mmz4281/2324/I1.csv",
-    },
-    "Bundesliga": {
-        2024: "https://www.football-data.co.uk/mmz4281/2425/D1.csv",
-        2023: "https://www.football-data.co.uk/mmz4281/2324/D1.csv",
-    },
+# Mapping slug understat → slug understatapi (identiques sauf casse)
+# Understat slugs : Ligue_1, EPL, La_liga, Serie_A, Bundesliga, RFPL
+UNDERSTAT_LEAGUES = {
+    "Ligue_1",
+    "EPL",
+    "La_liga",
+    "Serie_A",
+    "Bundesliga",
 }
 
 
-def fetch_fdco_matches(
+# ── Client understatapi ───────────────────────────────────────────────────────
+
+def _get_client():
+    """Retourne un UnderstatClient (synchrone)."""
+    try:
+        from understatapi import UnderstatClient
+        return UnderstatClient()
+    except ImportError as e:
+        raise ImportError(
+            "Installe understatapi : pip install understatapi"
+        ) from e
+
+
+def fetch_league_xg(
     understat_slug: str,
-    league_id: int,
     season: int = SEASON,
     session: Optional[Session] = None,
 ) -> list[dict]:
     """
-    Télécharge les résultats depuis football-data.co.uk (CSV).
-    Enrichit la DB avec les stats de base (pas de xG natif).
-    
-    Colonnes CSV utiles : HomeTeam, AwayTeam, FTHG, FTAG, Date,
-    HS (Home Shots), AS (Away Shots), HST, AST, HC, AC…
+    Récupère les xG de tous les matchs terminés d'une ligue/saison.
+
+    Retourne une liste de dicts :
+        {home_team, away_team, home_goals, away_goals,
+         home_xg, away_xg, home_npxg, away_npxg, match_date}
+
+    Args:
+        understat_slug : Ex. "Ligue_1", "EPL", "La_liga"
+        season         : Année de début de saison (ex. 2025 pour 2025-2026)
+        session        : Session SQLAlchemy optionnelle pour upsert en DB
     """
-    urls = FDCO_URLS.get(understat_slug, {})
-    url = urls.get(season)
-    if not url:
-        logger.info(f"football-data.co.uk: pas d'URL pour {understat_slug} {season}")
+    if understat_slug not in UNDERSTAT_LEAGUES:
+        logger.warning(
+            f"Understat : slug '{understat_slug}' inconnu. "
+            f"Slugs valides : {', '.join(UNDERSTAT_LEAGUES)}"
+        )
         return []
 
-    logger.info(f"football-data.co.uk [{understat_slug} {season}]: {url}")
+    logger.info(f"Understat [{understat_slug} {season}] : récupération matchs xG…")
+
     try:
-        resp = requests.get(url, headers=HEADERS, timeout=20)
-        resp.raise_for_status()
+        with _get_client() as understat:
+            raw_matches = understat.league(league=understat_slug).get_match_data(
+                season=str(season)
+            )
     except Exception as e:
-        logger.error(f"Erreur téléchargement FDCO: {e}")
+        logger.error(f"Understat [{understat_slug}]: erreur réseau : {e}")
         return []
-
-    # Décoder le CSV (BOM UTF-8 possible)
-    content = resp.content.decode("utf-8-sig", errors="replace")
-    reader = csv.DictReader(io.StringIO(content))
 
     results = []
-    for row in reader:
-        if not row.get("HomeTeam") or not row.get("FTHG"):
+    for m in raw_matches:
+        if not m.get("isResult"):
             continue
         try:
-            match_date = _parse_date_fdco(row.get("Date", ""))
-            results.append({
-                "home_team": row["HomeTeam"],
-                "away_team": row["AwayTeam"],
-                "home_goals": _int(row.get("FTHG")),
-                "away_goals": _int(row.get("FTAG")),
-                "match_date": match_date,
-                "home_shots": _int(row.get("HS")),
-                "away_shots": _int(row.get("AS")),
-            })
-        except Exception:
+            row = {
+                "home_team":  m["h"]["title"],
+                "away_team":  m["a"]["title"],
+                "home_goals": _safe_int(m.get("goals", {}).get("h")),
+                "away_goals": _safe_int(m.get("goals", {}).get("a")),
+                "home_xg":    _safe_float(m.get("xG", {}).get("h")),
+                "away_xg":    _safe_float(m.get("xG", {}).get("a")),
+                "home_npxg":  _safe_float(m.get("npxG", {}).get("h")),
+                "away_npxg":  _safe_float(m.get("npxG", {}).get("a")),
+                "match_date": _parse_date(m.get("datetime")),
+                "understat_id": m.get("id"),
+            }
+            results.append(row)
+        except (KeyError, TypeError):
             continue
 
-    logger.info(f"football-data.co.uk: {len(results)} matchs lus")
+    logger.info(f"Understat [{understat_slug} {season}] : {len(results)} matchs récupérés")
+
+    if session and results:
+        upsert_matches(session, results)
+
     return results
 
 
-# ── Stub Understat (conservé pour compatibilité) ──────────────────────────────
+def fetch_last_round_xg(
+    understat_slug: str,
+    season: int = SEASON,
+    session: Optional[Session] = None,
+) -> list[dict]:
+    """
+    Retourne les matchs de la dernière journée jouée (regroupés par date(s) proches).
+
+    Understat ne numérote pas les journées : on groupe les matchs par date
+    et on prend le cluster de dates le plus récent (fenêtre de 4 jours max).
+    """
+    all_matches = fetch_league_xg(understat_slug, season, session)
+    if not all_matches:
+        return []
+
+    # Trouver la date la plus récente
+    dated = [m for m in all_matches if m.get("match_date")]
+    if not dated:
+        return []
+
+    latest = max(m["match_date"] for m in dated)
+
+    # Regrouper les matchs dans une fenêtre de 4 jours autour de la dernière date
+    from datetime import timedelta
+    cutoff = latest - timedelta(days=4)
+    last_round = [m for m in dated if m["match_date"] >= cutoff]
+
+    logger.info(
+        f"Understat [{understat_slug}] dernière journée : "
+        f"{len(last_round)} matchs autour du {latest}"
+    )
+    return last_round
+
+
+def fetch_team_xg_season(
+    understat_slug: str,
+    season: int = SEASON,
+) -> list[dict]:
+    """
+    Retourne les xG cumulés par équipe sur la saison.
+
+    Retourne une liste triée par (xG_for - xG_against) DESC :
+        {team, matches, xg_for, xg_against, xg_diff, npxg_for, npxg_against}
+    """
+    all_matches = fetch_league_xg(understat_slug, season)
+    if not all_matches:
+        return []
+
+    teams: dict[str, dict] = {}
+
+    def _add(name, xg_for, xg_against, npxg_for, npxg_against):
+        if name not in teams:
+            teams[name] = {
+                "team": name, "matches": 0,
+                "xg_for": 0.0, "xg_against": 0.0,
+                "npxg_for": 0.0, "npxg_against": 0.0,
+            }
+        t = teams[name]
+        t["matches"] += 1
+        t["xg_for"]      += xg_for or 0
+        t["xg_against"]  += xg_against or 0
+        t["npxg_for"]    += npxg_for or 0
+        t["npxg_against"] += npxg_against or 0
+
+    for m in all_matches:
+        _add(m["home_team"], m["home_xg"], m["away_xg"], m["home_npxg"], m["away_npxg"])
+        _add(m["away_team"], m["away_xg"], m["home_xg"], m["away_npxg"], m["home_npxg"])
+
+    result = sorted(
+        teams.values(),
+        key=lambda t: t["xg_for"] - t["xg_against"],
+        reverse=True,
+    )
+    for i, t in enumerate(result, 1):
+        t["rank"] = i
+        t["xg_diff"] = round(t["xg_for"] - t["xg_against"], 2)
+        t["xg_for"] = round(t["xg_for"], 2)
+        t["xg_against"] = round(t["xg_against"], 2)
+        t["npxg_for"] = round(t["npxg_for"], 2)
+        t["npxg_against"] = round(t["npxg_against"], 2)
+
+    return result
+
+
+# ── Fonctions legacy (conservées pour compatibilité) ─────────────────────────
 
 def scrape_league_xg(
     understat_slug: str,
@@ -123,110 +202,61 @@ def scrape_league_xg(
     season: int = SEASON,
     session: Optional[Session] = None,
 ) -> list[dict]:
-    """
-    Tente de scraper les xG depuis understat.com.
-    
-    ⚠️  Understat a migré vers un rendu JS dynamique (mars 2026).
-    Cette fonction retourne [] si les données ne sont plus disponibles
-    statiquement. Pour les xG, utiliser :
-        euro-top collect --stats --last 10
-    (API-Football /fixtures/statistics)
-    """
-    logger.info(f"xG [{understat_slug} {season}]: tentative understat.com…")
-
-    try:
-        import re, json
-        resp = requests.get(
-            f"https://understat.com/league/{understat_slug}/{season}",
-            headers=HEADERS, timeout=20
-        )
-        resp.raise_for_status()
-
-        # Chercher le JSON embarqué (ancien format)
-        for var_name in ["datesData", "matchesData"]:
-            pattern = rf"var\s+{var_name}\s*=\s*JSON\.parse\('(.+?)'\)"
-            m = re.search(pattern, resp.text, re.DOTALL)
-            if m:
-                raw = m.group(1).encode().decode("unicode_escape")
-                data = json.loads(raw)
-                results = _parse_understat_matches(data, league_id, session, season)
-                logger.info(f"Understat [{understat_slug}]: {len(results)} matchs avec xG")
-                return results
-
-        logger.warning(
-            f"Understat [{understat_slug}]: données non disponibles statiquement. "
-            "Utilise --stats pour les xG via API-Football."
-        )
-    except Exception as e:
-        logger.warning(f"Understat [{understat_slug}]: {e}")
-
-    return []
+    """Alias legacy — utilise fetch_league_xg en interne."""
+    return fetch_league_xg(understat_slug, season, session)
 
 
 def scrape_player_xg(understat_slug: str, season: int = SEASON) -> list[dict]:
-    """Scrape xG joueurs depuis understat (nécessite rendu JS — retourne [] si indisponible)."""
-    logger.warning("scrape_player_xg: understat utilise JS dynamique, données non disponibles.")
-    return []
-
-
-def _parse_understat_matches(
-    data: list,
-    league_id: int,
-    session: Optional[Session],
-    season: int,
-) -> list[dict]:
-    """Parse le JSON datesData d'understat (ancien format)."""
-    results = []
-    for match in data:
-        try:
-            home_xg = _float(match.get("xG", {}).get("h"))
-            away_xg = _float(match.get("xG", {}).get("a"))
-            if home_xg is None or away_xg is None:
-                continue
-            results.append({
-                "home_team": match.get("h", {}).get("title"),
-                "away_team": match.get("a", {}).get("title"),
-                "home_xg": home_xg,
-                "away_xg": away_xg,
-                "match_date": _parse_date_understat(match.get("datetime")),
-            })
-        except Exception:
-            continue
-    return results
+    """xG joueur par match depuis Understat."""
+    logger.info(f"Understat [{understat_slug} {season}] : récupération xG joueurs…")
+    try:
+        with _get_client() as understat:
+            data = understat.league(league=understat_slug).get_player_data(
+                season=str(season)
+            )
+        players = []
+        for player_id, info in data.items():
+            h = info.get("history", [])
+            for match in h:
+                players.append({
+                    "player_id": player_id,
+                    "player_name": info.get("player_name"),
+                    "team": info.get("team_title"),
+                    "xg": _safe_float(match.get("xG")),
+                    "xa": _safe_float(match.get("xA")),
+                    "goals": _safe_int(match.get("goals")),
+                    "assists": _safe_int(match.get("assists")),
+                    "match_date": _parse_date(match.get("date")),
+                    "minutes": _safe_int(match.get("time")),
+                })
+        return players
+    except Exception as e:
+        logger.error(f"Understat player xG [{understat_slug}]: {e}")
+        return []
 
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
-def _parse_date_fdco(date_str: str) -> Optional[date]:
-    """Parse les dates football-data.co.uk : DD/MM/YY ou DD/MM/YYYY."""
+def _parse_date(date_str: Optional[str]) -> Optional[date]:
     if not date_str:
         return None
-    for fmt in ("%d/%m/%y", "%d/%m/%Y"):
+    for fmt in ("%Y-%m-%d %H:%M:%S", "%Y-%m-%dT%H:%M:%S", "%Y-%m-%d"):
         try:
-            return datetime.strptime(date_str.strip(), fmt).date()
+            return datetime.strptime(date_str[:19], fmt).date()
         except ValueError:
-            pass
+            continue
     return None
 
 
-def _parse_date_understat(date_str: Optional[str]) -> Optional[date]:
-    if not date_str:
-        return None
-    try:
-        return datetime.strptime(date_str, "%Y-%m-%d %H:%M:%S").date()
-    except Exception:
-        return None
-
-
-def _int(val) -> Optional[int]:
+def _safe_int(val) -> Optional[int]:
     try:
         return int(float(val))
     except (TypeError, ValueError):
         return None
 
 
-def _float(val) -> Optional[float]:
+def _safe_float(val) -> Optional[float]:
     try:
-        return round(float(val), 2)
+        return round(float(val), 4)
     except (TypeError, ValueError):
         return None
