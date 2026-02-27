@@ -28,6 +28,7 @@ Buteurs, passeurs, xG (Expected Goals), distance couverte (km), classements et r
 | [API-Football](https://api-sports.io/) | Résultats, classements, buteurs, passeurs, xG (saisons ≤ 2024) | Free (100 req/jour) | `httpx` |
 | [Understat.com](https://understat.com) | xG par match, top 5 ligues, **saison courante incluse** | Gratuit | `understatapi` |
 | [Sofascore](https://www.sofascore.com) | xG + stats match toutes compétitions, résultats temps réel | Gratuit (API non officielle) | `requests` |
+| [The Odds API](https://the-odds-api.com) | Cotes pré-match +80 bookmakers, marchés 1X2/O-U/HC | Free (500 req/mois) | `requests` |
 
 > ⚠️ **Saison courante (2025-2026)** : API-Football free plan bloqué sur saison ≤ 2024.
 > Utiliser **Understat** (xG) ou **Sofascore** (xG + stats) pour la saison courante.
@@ -51,6 +52,11 @@ cp .env.example .env
 1. Inscription sur [api-sports.io](https://api-sports.io/)
 2. Dashboard → ton token
 3. Dans `.env` : `API_FOOTBALL_KEY=ton_token_ici`
+
+### Clé The Odds API (gratuite — pour les value bets)
+1. Inscription sur [the-odds-api.com](https://the-odds-api.com)
+2. Dashboard → API key
+3. Dans `.env` : `ODDS_API_KEY=ton_token_ici`
 
 ---
 
@@ -118,6 +124,27 @@ euro-top distance --league bundesliga --last 5
 
 > ⚠️ Les données de distance (km) nécessitent les stats par match via `--stats`.
 > Chaque match coûte 1 requête API.
+
+### 🎰 Value bets (xG × cotes The Odds API)
+```bash
+# Value bets Ligue 1 (seuil 3% par défaut, 10 derniers matchs)
+python3 scripts/value_bets.py --league ligue1
+
+# Plusieurs ligues, seuil personnalisé, export JSON
+python3 scripts/value_bets.py --league ligue1 pl laliga --min-value 5 --export
+
+# Champions League (cotes uniquement, pas de xG disponible)
+python3 scripts/value_bets.py --league cl
+```
+
+**Modèle :**
+- Probabilités estimées via xG cumulé (N derniers matchs, modèle Poisson)
+- Cotes meilleures disponibles parmi +80 bookmakers EU (Unibet, Betclic, Winamax, Pinnacle…)
+- `Value = P(xG) − P(implicite)` — positif = bookmaker sous-évalue la probabilité réelle
+- Espérance de valeur (EV) : `P(xG) × cote − 1`
+
+> ⚠️ Outil d'analyse uniquement. Les marchés intègrent déjà partiellement le xG.
+> Nécessite `ODDS_API_KEY` dans `.env` ([inscription gratuite](https://the-odds-api.com)).
 
 ### 📰 Rapport récap toutes ligues
 ```bash
@@ -214,6 +241,8 @@ euro-top-stats/
 - **Distance (km) totale** : non disponible gratuitement (donnée Opta/tracking GPS, hors portée des APIs libres)
 - **Understat** : xG gratuit, saison courante ✅ — **top 5 ligues uniquement** (pas CL/EL/ECL)
 - **Sofascore** : API non officielle, peut changer sans préavis — préférer Understat pour les données de saison
+- **The Odds API** : 500 req/mois en free (suffisant pour monitoring hebdo multi-ligues) — valeur des value bets limitée car les marchés intègrent déjà le xG
+- **Modèle Poisson xG** : approximation simplifiée, à affiner avec données historiques plus riches
 
 ---
 

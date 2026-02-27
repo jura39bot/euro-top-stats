@@ -10,6 +10,9 @@ API_FOOTBALL_BASE = "https://v3.football.api-sports.io"
 DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./euro_top.db")
 SEASON = int(os.getenv("SEASON", "2025"))
 
+# The Odds API — https://the-odds-api.com (free: 500 req/mois)
+ODDS_API_KEY = os.getenv("ODDS_API_KEY", "")
+
 # Limite journalière API-Football (free = 100, on prend de la marge)
 API_DAILY_LIMIT = 90
 
