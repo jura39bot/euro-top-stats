@@ -1,0 +1,11 @@
+competition,season,match_date,home_team,away_team,home_goals,away_goals,home_xg,away_xg,source_xg,understat_id
+Premier League,2025-2026,2026-02-21,Aston Villa,Leeds,1,1,1.2544,1.2786,understat,29038
+Premier League,2025-2026,2026-02-21,Brentford,Brighton,0,2,1.6902,1.372,understat,29039
+Premier League,2025-2026,2026-02-21,Chelsea,Burnley,1,1,2.5153,1.0126,understat,29040
+Premier League,2025-2026,2026-02-21,West Ham,Bournemouth,0,0,2.3441,0.5227,understat,29047
+Premier League,2025-2026,2026-02-21,Manchester City,Newcastle United,2,1,2.2265,0.508,understat,29043
+Premier League,2025-2026,2026-02-22,Crystal Palace,Wolverhampton Wanderers,1,0,2.0356,1.6775,understat,29041
+Premier League,2025-2026,2026-02-22,Nottingham Forest,Liverpool,0,1,0.9348,2.3963,understat,29044
+Premier League,2025-2026,2026-02-22,Sunderland,Fulham,1,3,1.7609,2.167,understat,29045
+Premier League,2025-2026,2026-02-22,Tottenham,Arsenal,1,4,0.3833,3.317,understat,29046
+Premier League,2025-2026,2026-02-23,Everton,Manchester United,0,1,0.5609,1.4547,understat,29042

@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "competition": "Premier League",
+    "season": "2025-2026",
+    "matches": 10,
+    "source_xg": "understat",
+    "generated_at": "2026-02-27T07:20:26Z"
+  },
+  "matches": [
+    {
+      "competition": "Premier League",
+      "season": "2025-2026",
+      "match_date": "2026-02-21",
+      "home_team": "Aston Villa",
+      "away_team": "Leeds",
+      "home_goals": 1,
+      "away_goals": 1,
+      "home_xg": 1.2544,
+      "away_xg": 1.2786,
+      "source_xg": "understat",
+      "understat_id": "29038"
+    },
+    {
+      "competition": "Premier League",
+      "season": "2025-2026",
+      "match_date": "2026-02-21",
+      "home_team": "Brentford",
+      "away_team": "Brighton",
+      "home_goals": 0,
+      "away_goals": 2,
+      "home_xg": 1.6902,
+      "away_xg": 1.372,
+      "source_xg": "understat",
+      "understat_id": "29039"
+    },
+    {
+      "competition": "Premier League",
+      "season": "2025-2026",
+      "match_date": "2026-02-21",
+      "home_team": "Chelsea",
+      "away_team": "Burnley",
+      "home_goals": 1,
+      "away_goals": 1,
+      "home_xg": 2.5153,
+      "away_xg": 1.0126,
+      "source_xg": "understat",
+      "understat_id": "29040"
+    },
+    {
+      "competition": "Premier League",
+      "season": "2025-2026",
+      "match_date": "2026-02-21",
+      "home_team": "West Ham",
+      "away_team": "Bournemouth",
+      "home_goals": 0,
+      "away_goals": 0,
+      "home_xg": 2.3441,
+      "away_xg": 0.5227,
+      "source_xg": "understat",
+      "understat_id": "29047"
+    },
+    {
+      "competition": "Premier League",
+      "season": "2025-2026",
+      "match_date": "2026-02-21",
+      "home_team": "Manchester City",
+      "away_team": "Newcastle United",
+      "home_goals": 2,
+      "away_goals": 1,
+      "home_xg": 2.2265,
+      "away_xg": 0.508,
+      "source_xg": "understat",
+      "understat_id": "29043"
+    },
+    {
+      "competition": "Premier League",
+      "season": "2025-2026",
+      "match_date": "2026-02-22",
+      "home_team": "Crystal Palace",
+      "away_team": "Wolverhampton Wanderers",
+      "home_goals": 1,
+      "away_goals": 0,
+      "home_xg": 2.0356,
+      "away_xg": 1.6775,
+      "source_xg": "understat",
+      "understat_id": "29041"
+    },
+    {
+      "competition": "Premier League",
+      "season": "2025-2026",
+      "match_date": "2026-02-22",
+      "home_team": "Nottingham Forest",
+      "away_team": "Liverpool",
+      "home_goals": 0,
+      "away_goals": 1,
+      "home_xg": 0.9348,
+      "away_xg": 2.3963,
+      "source_xg": "understat",
+      "understat_id": "29044"
+    },
+    {
+      "competition": "Premier League",
+      "season": "2025-2026",
+      "match_date": "2026-02-22",
+      "home_team": "Sunderland",
+      "away_team": "Fulham",
+      "home_goals": 1,
+      "away_goals": 3,
+      "home_xg": 1.7609,
+      "away_xg": 2.167,
+      "source_xg": "understat",
+      "understat_id": "29045"
+    },
+    {
+      "competition": "Premier League",
+      "season": "2025-2026",
+      "match_date": "2026-02-22",
+      "home_team": "Tottenham",
+      "away_team": "Arsenal",
+      "home_goals": 1,
+      "away_goals": 4,
+      "home_xg": 0.3833,
+      "away_xg": 3.317,
+      "source_xg": "understat",
+      "understat_id": "29046"
+    },
+    {
+      "competition": "Premier League",
+      "season": "2025-2026",
+      "match_date": "2026-02-23",
+      "home_team": "Everton",
+      "away_team": "Manchester United",
+      "home_goals": 0,
+      "away_goals": 1,
+      "home_xg": 0.5609,
+      "away_xg": 1.4547,
+      "source_xg": "understat",
+      "understat_id": "29042"
+    }
+  ]
+}
