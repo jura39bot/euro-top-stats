@@ -1,138 +1,123 @@
-# 🎰 Paris Week-end — 28 Février / 1er Mars 2026
+# 🎰 Paris Simples — Week-end 28 Février / 1er Mars 2026
 
-> **Budget fictif : 10,00 €**  
-> Générés le 28/02/2026 à 04h30 (Europe/Paris) par Béthanie  
-> Source cotes : **Betfair Exchange** (via The Odds API · marché H2H · région EU)  
-> ⚠️ *Betfair = exchange (pas de marge bookmaker), commission ~5% sur les gains*
-
----
-
-## 📊 Récapitulatif des mises
-
-| # | Type | Mise | Cote Betfair | Gain potentiel | Bénéfice potentiel |
-|---|------|------|--------------|----------------|---------------------|
-| 1 | Simple | 2,00 € | 1.69 | **3,38 €** | +1,38 € |
-| 2 | Simple | 2,00 € | 1.64 | **3,28 €** | +1,28 € |
-| 3 | Combiné x3 | 4,00 € | 4.36 | **17,43 €** | +13,43 € |
-| 4 | Combiné x3 risqué | 2,00 € | 11.51 | **23,02 €** | +21,02 € |
-| **Total** | | **10,00 €** | | **max 23,02 €** | |
-
-> 💡 *Betfair > bookmaker classique : cotes plus hautes car exchange peer-to-peer*
+> **Budget fictif : 10,00 €** (5 paris simples × 2,00 €)
+> Générés le 28/02/2026 (Europe/Paris) par Béthanie
+> Source cotes : **Betfair Exchange** (`betfair_ex_eu` via The Odds API)
+> Marché : **H2H uniquement (1N2) — paris simples**
 
 ---
 
-## 🟢 Pari 1 — Simple (2,00 €)
+## 📊 Récapitulatif
 
-**Bayern Munich victoire** vs Borussia Dortmund  
-📅 Sam 28/02 · 17h30 · Bundesliga (Klassiker)  
-💰 Cote Betfair : **1.69** *(était 1.62 chez Unibet)*  
-🎯 Gain si gagnant : **3,38 €** (bénéfice : +1,38 €)
+| # | Match | Sélection | Cote Betfair | Mise | Gain potentiel |
+|---|-------|-----------|-------------|------|----------------|
+| 1 | Dortmund vs Bayern | **Bayern victoire** | 1.69 | 2,00 € | **3,38 €** |
+| 2 | Arsenal vs Chelsea | **Arsenal victoire** | 1.64 | 2,00 € | **3,28 €** |
+| 3 | Verona vs Napoli | **Napoli victoire** | 1.65 | 2,00 € | **3,30 €** |
+| 4 | Leverkusen vs Mainz | **Leverkusen victoire** | 1.76 | 2,00 € | **3,52 €** |
+| 5 | Marseille vs Lyon | **Marseille victoire** | 2.02 | 2,00 € | **4,04 €** |
+| **Total** | | | | **10,00 €** | **max 4,04 € / pari** |
 
-| Équipe | Betfair |
-|--------|---------|
-| Bayern Munich ✅ | **1.69** |
-| Nul | 4.80 |
+> Si tous gagnants (indépendants) : **17,52 € de retours** pour 10,00 € misés
+
+---
+
+## 🔵 Pari 1 — Bayern Munich victoire (2,00 €)
+
+**Borussia Dortmund vs Bayern Munich**
+📅 Sam 28/02 · 17h30 · Bundesliga · Signal Iduna Park
+
+| | Cote Betfair |
+|--|--|
 | Borussia Dortmund | 4.80 |
+| **Bayern Munich ✅** | **1.69** |
+| Nul | 4.80 |
 
-**Analyse :** Le Klassiker à Signal Iduna Park. Bayern en grande forme en 2026 (meilleure attaque Bundesliga), Dortmund trop irrégulier cette saison. Betfair donne +0.07 de mieux que les bookmakers classiques.
+🎯 Gain : **3,38 €** (+1,38 €)
+
+*Analyse : Bayern en grande forme, meilleure attaque Bundesliga 2026. Dortmund trop irrégulier. Le Klassiker tourne souvent en faveur du Bayern ces dernières saisons.*
 
 ---
 
-## 🟢 Pari 2 — Simple (2,00 €)
+## 🔵 Pari 2 — Arsenal victoire (2,00 €)
 
-**Arsenal victoire** vs Chelsea  
-📅 Dim 01/03 · 16h30 · Premier League  
-💰 Cote Betfair : **1.64** *(était 1.59 chez Unibet)*  
-🎯 Gain si gagnant : **3,28 €** (bénéfice : +1,28 €)
+**Arsenal vs Chelsea**
+📅 Dim 01/03 · 16h30 · Premier League · Emirates Stadium
 
-| Équipe | Betfair |
-|--------|---------|
-| Arsenal ✅ | **1.64** |
+| | Cote Betfair |
+|--|--|
+| **Arsenal ✅** | **1.64** |
 | Nul | 4.30 |
 | Chelsea | 6.00 |
 
-**Analyse :** Derby de Londres à l'Emirates. Arsenal très solide à domicile, Chelsea inconsistant en déplacement.
+🎯 Gain : **3,28 €** (+1,28 €)
+
+*Analyse : Arsenal très solide à domicile cette saison. Chelsea inconsistant en déplacement. Derby de Londres avec Arsenal net favori.*
 
 ---
 
-## 🟡 Pari 3 — Combiné x3 (4,00 €)
+## 🔵 Pari 3 — Napoli victoire (2,00 €)
 
-| Sélection | Match | Date | Cote Betfair |
-|-----------|-------|------|-------------|
-| **Bayer Leverkusen** victoire | vs FSV Mainz 05 | Sam 28/02 14h30 | **1.76** |
-| **Napoli** victoire | vs Hellas Verona | Sam 28/02 17h00 | **1.65** |
-| **AS Monaco** victoire | vs Angers | Sam 28/02 18h00 | **1.50** |
+**Hellas Verona vs Napoli**
+📅 Sam 28/02 · 17h00 · Serie A
 
-**Cote combinée : 1.76 × 1.65 × 1.50 = 4.36**  
-🎯 Gain si gagnant : **17,43 €** (bénéfice : +13,43 €)
+| | Cote Betfair |
+|--|--|
+| Hellas Verona | 6.80 |
+| Nul | 3.95 |
+| **Napoli ✅** | **1.65** |
 
-*(vs 15,00 € avec Unibet — +2,43 € grâce à Betfair)*
+🎯 Gain : **3,30 €** (+1,30 €)
 
-**Analyse :**
-- Leverkusen : tenant du titre, solide à domicile, Mainz faible en déplacement
-- Napoli : leader ou co-leader Serie A, Verona dernier ou avant-dernier
-- Monaco : 3e de L1, Angers promu sans ressources
+*Analyse : Napoli en tête ou co-leader de Serie A. Verona en grande difficulté au classement. Pari solide.*
 
 ---
 
-## 🔴 Pari 4 — Combiné x3 Risqué (2,00 €)
+## 🔵 Pari 4 — Bayer Leverkusen victoire (2,00 €)
 
-| Sélection | Match | Date | Cote Betfair |
-|-----------|-------|------|-------------|
-| **Marseille** victoire | vs Lyon | Dim 01/03 19h45 | **2.02** |
-| **Atalanta BC** victoire | vs Sassuolo | Dim 01/03 14h00 | **2.02** |
-| **AS Roma** victoire | vs Juventus | Dim 01/03 19h45 | **2.82** |
+**Bayer Leverkusen vs FSV Mainz 05**
+📅 Sam 28/02 · 14h30 · Bundesliga · BayArena
 
-**Cote combinée : 2.02 × 2.02 × 2.82 = 11.51**  
-🎯 Gain si gagnant : **23,02 €** (bénéfice : +21,02 €)
+| | Cote Betfair |
+|--|--|
+| **Bayer Leverkusen ✅** | **1.76** |
+| Nul | 4.20 |
+| FSV Mainz 05 | 5.00 |
 
-*(vs 18,92 € avec Unibet — +4,10 € grâce à Betfair)*
+🎯 Gain : **3,52 €** (+1,52 €)
 
-**Analyse :**
-- OM vs OL : Classique du dimanche soir, OM à domicile, derby chaud
-- Atalanta : machine à buts, Sassuolo promu et très faible
-- Roma vs Juve : Roma à l'Olimpico peut surprendre, Juve irrégulière
+*Analyse : Tenant du titre Bundesliga, solide à domicile. Mainz faible en déplacement. Cote avec de la valeur.*
 
 ---
 
-## 📋 Cotes complètes Betfair — Matchs du week-end
+## 🔵 Pari 5 — Marseille victoire (2,00 €)
 
-### 🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League
-| Match | Date | 1 | N | 2 |
-|-------|------|---|---|---|
-| Arsenal vs Chelsea | Dim 16h30 | **1.64** | 4.30 | 6.00 |
+**Marseille vs Lyon**
+📅 Dim 01/03 · 19h45 · Ligue 1 · Vélodrome
 
-### 🇫🇷 Ligue 1
-| Match | Date | 1 | N | 2 |
-|-------|------|---|---|---|
-| AS Monaco vs Angers | Sam 18h00 | **1.50** | 4.70 | 7.80 |
-| Marseille vs Lyon | Dim 19h45 | **2.02** | 3.90 | 4.00 |
+| | Cote Betfair |
+|--|--|
+| **Marseille ✅** | **2.02** |
+| Nul | 3.90 |
+| Lyon | 4.00 |
 
-### 🇩🇪 Bundesliga
-| Match | Date | 1 | N | 2 |
-|-------|------|---|---|---|
-| Bayer Leverkusen vs Mainz | Sam 14h30 | **1.76** | 4.20 | 5.00 |
-| Dortmund vs Bayern Munich | Sam 17h30 | 4.80 | 4.80 | **1.69** |
+🎯 Gain : **4,04 €** (+2,04 €)
 
-### 🇮🇹 Serie A
-| Match | Date | 1 | N | 2 |
-|-------|------|---|---|---|
-| Hellas Verona vs Napoli | Sam 17h00 | 6.80 | 3.95 | **1.65** |
-| Sassuolo vs Atalanta BC | Dim 14h00 | 4.10 | 3.70 | **2.02** |
-| AS Roma vs Juventus | Dim 19h45 | **2.82** | 3.10 | 3.00 |
+*Analyse : OM à domicile au Vélodrome pour le Classique du dimanche soir. Lyon en difficulté cette saison. Meilleure cote du lot avec une vraie valeur.*
 
 ---
 
 ## 📈 Suivi des résultats (à remplir lundi 02/03)
 
-| # | Sélection | Statut | Résultat | Gain réalisé |
-|---|-----------|--------|----------|--------------|
-| Pari 1 | Bayern victoire @ 1.69 | ⏳ En attente | — | — |
-| Pari 2 | Arsenal victoire @ 1.64 | ⏳ En attente | — | — |
-| Pari 3 | Leverkusen + Napoli + Monaco @ 4.36 | ⏳ En attente | — | — |
-| Pari 4 | Marseille + Atalanta + Roma @ 11.51 | ⏳ En attente | — | — |
+| # | Sélection | Résultat | Statut | Gain |
+|---|-----------|----------|--------|------|
+| 1 | Bayern victoire @ 1.69 | — | ⏳ | — |
+| 2 | Arsenal victoire @ 1.64 | — | ⏳ | — |
+| 3 | Napoli victoire @ 1.65 | — | ⏳ | — |
+| 4 | Leverkusen victoire @ 1.76 | — | ⏳ | — |
+| 5 | Marseille victoire @ 2.02 | — | ⏳ | — |
 | **Total** | | | | **— / -10,00 €** |
 
 ---
 
-*⚠️ Paris fictifs. Aucune mise réelle. Pour le lol et la gloire uniquement. 🥂*
+*⚠️ Paris fictifs · Aucune mise réelle · Pour le lol et la gloire 🥂*
