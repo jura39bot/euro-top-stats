@@ -40,7 +40,7 @@ ODDS_SPORT_KEYS: dict[str, str] = {
 EU_BOOKMAKERS = {
     "unibet_eu", "betclic", "winamax", "pinnacle",
     "betway", "bwin", "williamhill", "bet365",
-    "betfair_ex_eu", "ladbrokes", "pmu", "fdj",
+    "ladbrokes", "pmu", "fdj",
 }
 
 
