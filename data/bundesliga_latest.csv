@@ -1,0 +1,10 @@
+competition,season,match_date,home_team,away_team,home_goals,away_goals,home_xg,away_xg,source_xg,understat_id
+Bundesliga,2025-2026,2026-02-27,Augsburg,FC Cologne,2,0,1.5584,0.4927,understat,30431
+Bundesliga,2025-2026,2026-02-28,Bayer Leverkusen,Mainz 05,1,1,1.9482,0.9714,understat,30432
+Bundesliga,2025-2026,2026-02-28,Borussia M.Gladbach,Union Berlin,1,0,2.5601,0.1376,understat,30433
+Bundesliga,2025-2026,2026-02-28,Hoffenheim,St. Pauli,0,1,2.5741,0.9465,understat,30437
+Bundesliga,2025-2026,2026-02-28,Werder Bremen,FC Heidenheim,2,0,3.4789,1.7092,understat,30439
+Bundesliga,2025-2026,2026-02-28,Borussia Dortmund,Bayern Munich,2,3,1.3976,1.8902,understat,30434
+Bundesliga,2025-2026,2026-03-01,VfB Stuttgart,Wolfsburg,4,0,2.9519,0.8657,understat,30438
+Bundesliga,2025-2026,2026-03-01,Eintracht Frankfurt,Freiburg,2,0,1.6709,0.6419,understat,30435
+Bundesliga,2025-2026,2026-03-01,Hamburger SV,RasenBallsport Leipzig,1,2,0.8206,2.29,understat,30436

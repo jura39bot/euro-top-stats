@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "competition": "Serie A",
+    "season": "2025-2026",
+    "matches": 8,
+    "source_xg": "understat",
+    "generated_at": "2026-03-01T22:59:10Z"
+  },
+  "matches": [
+    {
+      "competition": "Serie A",
+      "season": "2025-2026",
+      "match_date": "2026-02-27",
+      "home_team": "Parma Calcio 1913",
+      "away_team": "Cagliari",
+      "home_goals": 1,
+      "away_goals": 1,
+      "home_xg": 1.3126,
+      "away_xg": 0.6158,
+      "source_xg": "understat",
+      "understat_id": "30106"
+    },
+    {
+      "competition": "Serie A",
+      "season": "2025-2026",
+      "match_date": "2026-02-28",
+      "home_team": "Como",
+      "away_team": "Lecce",
+      "home_goals": 3,
+      "away_goals": 1,
+      "home_xg": 2.9862,
+      "away_xg": 0.425,
+      "source_xg": "understat",
+      "understat_id": "30113"
+    },
+    {
+      "competition": "Serie A",
+      "season": "2025-2026",
+      "match_date": "2026-02-28",
+      "home_team": "Verona",
+      "away_team": "Napoli",
+      "home_goals": 1,
+      "away_goals": 2,
+      "home_xg": 0.2778,
+      "away_xg": 1.2135,
+      "source_xg": "understat",
+      "understat_id": "30109"
+    },
+    {
+      "competition": "Serie A",
+      "season": "2025-2026",
+      "match_date": "2026-02-28",
+      "home_team": "Inter",
+      "away_team": "Genoa",
+      "home_goals": 2,
+      "away_goals": 0,
+      "home_xg": 2.1923,
+      "away_xg": 0.1708,
+      "source_xg": "understat",
+      "understat_id": "30105"
+    },
+    {
+      "competition": "Serie A",
+      "season": "2025-2026",
+      "match_date": "2026-03-01",
+      "home_team": "Cremonese",
+      "away_team": "AC Milan",
+      "home_goals": 0,
+      "away_goals": 2,
+      "home_xg": 1.0839,
+      "away_xg": 3.8751,
+      "source_xg": "understat",
+      "understat_id": "30104"
+    },
+    {
+      "competition": "Serie A",
+      "season": "2025-2026",
+      "match_date": "2026-03-01",
+      "home_team": "Sassuolo",
+      "away_team": "Atalanta",
+      "home_goals": 2,
+      "away_goals": 1,
+      "home_xg": 1.8113,
+      "away_xg": 3.7472,
+      "source_xg": "understat",
+      "understat_id": "30112"
+    },
+    {
+      "competition": "Serie A",
+      "season": "2025-2026",
+      "match_date": "2026-03-01",
+      "home_team": "Torino",
+      "away_team": "Lazio",
+      "home_goals": 2,
+      "away_goals": 0,
+      "home_xg": 1.0609,
+      "away_xg": 1.0587,
+      "source_xg": "understat",
+      "understat_id": "30111"
+    },
+    {
+      "competition": "Serie A",
+      "season": "2025-2026",
+      "match_date": "2026-03-01",
+      "home_team": "Roma",
+      "away_team": "Juventus",
+      "home_goals": 3,
+      "away_goals": 3,
+      "home_xg": 2.3306,
+      "away_xg": 1.8583,
+      "source_xg": "understat",
+      "understat_id": "30108"
+    }
+  ]
+}

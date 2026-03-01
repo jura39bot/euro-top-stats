@@ -1,10 +1,10 @@
 competition,season,match_date,home_team,away_team,home_goals,away_goals,home_xg,away_xg,source_xg,understat_id
-Ligue 1,2025-2026,2026-02-20,Brest,Marseille,2,0,1.3341,1.3575,understat,29738
-Ligue 1,2025-2026,2026-02-21,Lens,Monaco,2,3,1.8283,2.34,understat,29739
-Ligue 1,2025-2026,2026-02-21,Toulouse,Paris FC,1,1,2.6776,0.6878,understat,29744
-Ligue 1,2025-2026,2026-02-21,Paris Saint Germain,Metz,3,0,2.4144,0.0591,understat,29742
-Ligue 1,2025-2026,2026-02-22,Auxerre,Rennes,0,3,0.7,1.106,understat,29737
-Ligue 1,2025-2026,2026-02-22,Angers,Lille,0,1,0.2404,2.7426,understat,29736
-Ligue 1,2025-2026,2026-02-22,Nantes,Le Havre,2,0,1.7075,0.7533,understat,29740
-Ligue 1,2025-2026,2026-02-22,Nice,Lorient,3,3,2.7465,1.977,understat,29741
-Ligue 1,2025-2026,2026-02-22,Strasbourg,Lyon,3,1,2.229,0.4273,understat,29743
+Ligue 1,2025-2026,2026-02-27,Strasbourg,Lens,1,1,0.8747,2.0381,understat,29753
+Ligue 1,2025-2026,2026-02-28,Rennes,Toulouse,1,0,0.7091,0.6684,understat,29752
+Ligue 1,2025-2026,2026-02-28,Monaco,Angers,2,0,1.6708,0.6094,understat,29750
+Ligue 1,2025-2026,2026-02-28,Le Havre,Paris Saint Germain,0,1,0.6828,4.0363,understat,29745
+Ligue 1,2025-2026,2026-03-01,Paris FC,Nice,1,0,1.3017,1.263,understat,29751
+Ligue 1,2025-2026,2026-03-01,Lille,Nantes,1,0,0.4957,0.171,understat,29746
+Ligue 1,2025-2026,2026-03-01,Lorient,Auxerre,2,2,1.0277,1.9667,understat,29747
+Ligue 1,2025-2026,2026-03-01,Metz,Brest,0,1,1.5837,0.9632,understat,29749
+Ligue 1,2025-2026,2026-03-01,Marseille,Lyon,3,2,1.7876,1.7852,understat,29748

@@ -1,0 +1,9 @@
+competition,season,match_date,home_team,away_team,home_goals,away_goals,home_xg,away_xg,source_xg,understat_id
+Serie A,2025-2026,2026-02-27,Parma Calcio 1913,Cagliari,1,1,1.3126,0.6158,understat,30106
+Serie A,2025-2026,2026-02-28,Como,Lecce,3,1,2.9862,0.425,understat,30113
+Serie A,2025-2026,2026-02-28,Verona,Napoli,1,2,0.2778,1.2135,understat,30109
+Serie A,2025-2026,2026-02-28,Inter,Genoa,2,0,2.1923,0.1708,understat,30105
+Serie A,2025-2026,2026-03-01,Cremonese,AC Milan,0,2,1.0839,3.8751,understat,30104
+Serie A,2025-2026,2026-03-01,Sassuolo,Atalanta,2,1,1.8113,3.7472,understat,30112
+Serie A,2025-2026,2026-03-01,Torino,Lazio,2,0,1.0609,1.0587,understat,30111
+Serie A,2025-2026,2026-03-01,Roma,Juventus,3,3,2.3306,1.8583,understat,30108
