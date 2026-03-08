@@ -1,9 +1,10 @@
 competition,season,match_date,home_team,away_team,home_goals,away_goals,home_xg,away_xg,source_xg,understat_id
-Serie A,2025-2026,2026-02-27,Parma Calcio 1913,Cagliari,1,1,1.3126,0.6158,understat,30106
-Serie A,2025-2026,2026-02-28,Como,Lecce,3,1,2.9862,0.425,understat,30113
-Serie A,2025-2026,2026-02-28,Verona,Napoli,1,2,0.2778,1.2135,understat,30109
-Serie A,2025-2026,2026-02-28,Inter,Genoa,2,0,2.1923,0.1708,understat,30105
-Serie A,2025-2026,2026-03-01,Cremonese,AC Milan,0,2,1.0839,3.8751,understat,30104
-Serie A,2025-2026,2026-03-01,Sassuolo,Atalanta,2,1,1.8113,3.7472,understat,30112
-Serie A,2025-2026,2026-03-01,Torino,Lazio,2,0,1.0609,1.0587,understat,30111
-Serie A,2025-2026,2026-03-01,Roma,Juventus,3,3,2.3306,1.8583,understat,30108
+Serie A,2025-2026,2026-03-06,Napoli,Torino,2,1,2.3201,0.6934,understat,30114
+Serie A,2025-2026,2026-03-07,Cagliari,Como,1,2,0.518,0.7638,understat,30116
+Serie A,2025-2026,2026-03-07,Atalanta,Udinese,2,2,1.9985,0.8601,understat,30115
+Serie A,2025-2026,2026-03-07,Juventus,Pisa,4,0,3.1681,0.32,understat,30119
+Serie A,2025-2026,2026-03-08,Lecce,Cremonese,2,1,1.7671,0.7914,understat,30121
+Serie A,2025-2026,2026-03-08,Fiorentina,Parma Calcio 1913,0,0,0.7585,0.2531,understat,30117
+Serie A,2025-2026,2026-03-08,Bologna,Verona,1,2,0.9037,2.0286,understat,30123
+Serie A,2025-2026,2026-03-08,Genoa,Roma,2,1,2.5591,0.2826,understat,30118
+Serie A,2025-2026,2026-03-08,AC Milan,Inter,1,0,0.852,1.444,understat,30122

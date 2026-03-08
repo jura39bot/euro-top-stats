@@ -10,12 +10,12 @@
 | # | Match | Sélection | Cote | Résultat | Statut | Retour |
 |---|-------|-----------|------|----------|--------|--------|
 | 1 | Dortmund vs Bayern | **Bayern victoire** | 1.60 (WM) | 2-3 ✅ | ✅ GAGNÉ | **3,20 €** |
-| 2 | Arsenal vs Chelsea | **Arsenal victoire** | 1.56 (WM) | dim. 16h30 | ⏳ Demain | — |
+| 2 | Arsenal vs Chelsea | **Arsenal victoire** | 1.56 (WM) | 2-1 ✅ | ✅ GAGNÉ | **3,12 €** |
 | 3 | Verona vs Napoli | **Napoli victoire** | 1.60 (WM) | 1-2 ✅ | ✅ GAGNÉ | **3,20 €** |
 | 4 | Leverkusen vs Mainz | **Leverkusen victoire** | 1.70 (WM) | 1-1 ❌ | ❌ PERDU | 0 € |
-| 5 | Marseille vs Lyon | **Marseille victoire** | 1.94 (WM) | dim. 19h45 | ⏳ Demain | — |
+| 5 | Marseille vs Lyon | **Marseille victoire** | 1.94 (WM) | 3-2 ✅ | ✅ GAGNÉ | **3,88 €** |
 
-> 💰 **Bilan samedi** : 6€ misés · 6,40€ récupérés · **+0,40€ de bénef**
+> 💰 **Bilan final** : 10€ misés · 13,40€ récupérés · **+3,40€ de bénef**
 > 🏆 **Si Arsenal + OM gagnent demain** : total = **14,52€** pour 10€ misés (+4,52€)
 
 ---
@@ -28,7 +28,7 @@ Retour : **3,20 €** (+1,20 €)
 
 ---
 
-## ⏳ Pari 2 — Arsenal victoire (2,00 €) — DEMAIN 16h30
+## ✅ Pari 2 — Arsenal victoire (2,00 €) — GAGNÉ
 
 **Arsenal vs Chelsea** · Dim 01/03 · Emirates · Cote Winamax **1.56**
 Gain potentiel : **3,12 €** (+1,12 €)
@@ -51,7 +51,7 @@ Retour : **0 €** (-2,00 €)
 
 ---
 
-## ⏳ Pari 5 — Marseille victoire (2,00 €) — DEMAIN 19h45
+## ✅ Pari 5 — Marseille victoire (2,00 €) — GAGNÉ
 
 **Marseille vs Lyon** · Dim 01/03 · Vélodrome · Cote Winamax **1.94**
 Gain potentiel : **3,88 €** (+1,88 €)
