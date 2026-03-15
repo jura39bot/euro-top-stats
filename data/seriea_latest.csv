@@ -1,10 +1,10 @@
 competition,season,match_date,home_team,away_team,home_goals,away_goals,home_xg,away_xg,source_xg,understat_id
-Serie A,2025-2026,2026-03-06,Napoli,Torino,2,1,2.3201,0.6934,understat,30114
-Serie A,2025-2026,2026-03-07,Cagliari,Como,1,2,0.518,0.7638,understat,30116
-Serie A,2025-2026,2026-03-07,Atalanta,Udinese,2,2,1.9985,0.8601,understat,30115
-Serie A,2025-2026,2026-03-07,Juventus,Pisa,4,0,3.1681,0.32,understat,30119
-Serie A,2025-2026,2026-03-08,Lecce,Cremonese,2,1,1.7671,0.7914,understat,30121
-Serie A,2025-2026,2026-03-08,Fiorentina,Parma Calcio 1913,0,0,0.7585,0.2531,understat,30117
-Serie A,2025-2026,2026-03-08,Bologna,Verona,1,2,0.9037,2.0286,understat,30123
-Serie A,2025-2026,2026-03-08,Genoa,Roma,2,1,2.5591,0.2826,understat,30118
-Serie A,2025-2026,2026-03-08,AC Milan,Inter,1,0,0.852,1.444,understat,30122
+Serie A,2025-2026,2026-03-13,Torino,Parma Calcio 1913,4,1,2.4432,0.5799,understat,30131
+Serie A,2025-2026,2026-03-14,Inter,Atalanta,1,1,2.0286,0.8671,understat,30126
+Serie A,2025-2026,2026-03-14,Napoli,Lecce,2,1,1.1311,1.2269,understat,30128
+Serie A,2025-2026,2026-03-14,Udinese,Juventus,0,1,0.742,3.1873,understat,30132
+Serie A,2025-2026,2026-03-15,Verona,Genoa,0,2,0.3708,0.5341,understat,30133
+Serie A,2025-2026,2026-03-15,Pisa,Cagliari,3,1,2.9429,1.5233,understat,30129
+Serie A,2025-2026,2026-03-15,Sassuolo,Bologna,0,1,0.4271,0.731,understat,30130
+Serie A,2025-2026,2026-03-15,Como,Roma,2,1,2.4691,0.9,understat,30124
+Serie A,2025-2026,2026-03-15,Lazio,AC Milan,1,0,0.5384,1.1618,understat,30127
