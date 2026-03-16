@@ -23,11 +23,11 @@ from ..db import Session, upsert_matches
 logger = logging.getLogger(__name__)
 
 # Mapping slug understat → slug understatapi (identiques sauf casse)
-# Understat slugs : Ligue_1, EPL, La_liga, Serie_A, Bundesliga, RFPL
+# Understat slugs : Ligue_1, EPL, La_Liga, Serie_A, Bundesliga, RFPL
 UNDERSTAT_LEAGUES = {
     "Ligue_1",
     "EPL",
-    "La_liga",
+    "La_Liga",
     "Serie_A",
     "Bundesliga",
 }

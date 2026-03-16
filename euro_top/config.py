@@ -45,7 +45,7 @@ LEAGUES: dict[str, League] = {
         id=140, name="La Liga", short="laliga",
         aliases=["es", "spain", "espagne", "la-liga", "la_liga"],
         flag="🇪🇸", country="Spain",
-        understat_slug="La_liga",
+        understat_slug="La_Liga",
     ),
     "seriea": League(
         id=135, name="Serie A", short="seriea",
