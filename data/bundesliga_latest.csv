@@ -1,10 +1,10 @@
 competition,season,match_date,home_team,away_team,home_goals,away_goals,home_xg,away_xg,source_xg,understat_id
-Bundesliga,2025-2026,2026-03-13,Borussia M.Gladbach,St. Pauli,2,0,1.0834,0.6287,understat,30450
-Bundesliga,2025-2026,2026-03-14,Bayer Leverkusen,Bayern Munich,1,1,2.6526,1.2682,understat,30449
-Bundesliga,2025-2026,2026-03-14,Borussia Dortmund,Augsburg,2,0,2.4905,0.7557,understat,30451
-Bundesliga,2025-2026,2026-03-14,Eintracht Frankfurt,FC Heidenheim,1,0,0.7252,0.1362,understat,30452
-Bundesliga,2025-2026,2026-03-14,Hoffenheim,Wolfsburg,1,1,2.2381,0.2214,understat,30455
-Bundesliga,2025-2026,2026-03-14,Hamburger SV,FC Cologne,1,1,0.5565,0.9842,understat,30454
-Bundesliga,2025-2026,2026-03-15,Werder Bremen,Mainz 05,0,2,0.89,2.0562,understat,30457
-Bundesliga,2025-2026,2026-03-15,Freiburg,Union Berlin,0,1,1.3451,1.0006,understat,30453
-Bundesliga,2025-2026,2026-03-15,VfB Stuttgart,RasenBallsport Leipzig,1,0,1.9317,1.1218,understat,30456
+Bundesliga,2025-2026,2026-03-20,RasenBallsport Leipzig,Hoffenheim,5,0,2.907,0.5214,understat,30464
+Bundesliga,2025-2026,2026-03-21,Bayern Munich,Union Berlin,4,0,5.9339,0.2246,understat,30459
+Bundesliga,2025-2026,2026-03-21,FC Cologne,Borussia M.Gladbach,3,3,1.2929,1.0815,understat,30461
+Bundesliga,2025-2026,2026-03-21,FC Heidenheim,Bayer Leverkusen,3,3,1.7374,1.9629,understat,30462
+Bundesliga,2025-2026,2026-03-21,Wolfsburg,Werder Bremen,0,1,1.0569,0.4149,understat,30466
+Bundesliga,2025-2026,2026-03-21,Borussia Dortmund,Hamburger SV,3,2,6.1019,1.2305,understat,30460
+Bundesliga,2025-2026,2026-03-22,Mainz 05,Eintracht Frankfurt,2,1,1.3839,1.7175,understat,30463
+Bundesliga,2025-2026,2026-03-22,St. Pauli,Freiburg,1,2,1.3965,2.7442,understat,30465
+Bundesliga,2025-2026,2026-03-22,Augsburg,VfB Stuttgart,2,5,1.591,3.8709,understat,30458

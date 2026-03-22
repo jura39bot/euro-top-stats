@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "competition": "La Liga",
+    "season": "2025-2026",
+    "matches": 10,
+    "source_xg": "understat",
+    "generated_at": "2026-03-22T22:59:08Z"
+  },
+  "matches": [
+    {
+      "competition": "La Liga",
+      "season": "2025-2026",
+      "match_date": "2026-03-20",
+      "home_team": "Villarreal",
+      "away_team": "Real Sociedad",
+      "home_goals": 3,
+      "away_goals": 1,
+      "home_xg": 3.3559,
+      "away_xg": 0.895,
+      "source_xg": "understat",
+      "understat_id": "29438"
+    },
+    {
+      "competition": "La Liga",
+      "season": "2025-2026",
+      "match_date": "2026-03-21",
+      "home_team": "Elche",
+      "away_team": "Mallorca",
+      "home_goals": 2,
+      "away_goals": 1,
+      "home_xg": 1.516,
+      "away_xg": 1.5194,
+      "source_xg": "understat",
+      "understat_id": "29440"
+    },
+    {
+      "competition": "La Liga",
+      "season": "2025-2026",
+      "match_date": "2026-03-21",
+      "home_team": "Espanyol",
+      "away_team": "Getafe",
+      "home_goals": 1,
+      "away_goals": 2,
+      "home_xg": 1.5121,
+      "away_xg": 2.0638,
+      "source_xg": "understat",
+      "understat_id": "29442"
+    },
+    {
+      "competition": "La Liga",
+      "season": "2025-2026",
+      "match_date": "2026-03-21",
+      "home_team": "Levante",
+      "away_team": "Real Oviedo",
+      "home_goals": 4,
+      "away_goals": 2,
+      "home_xg": 2.9267,
+      "away_xg": 1.3357,
+      "source_xg": "understat",
+      "understat_id": "29443"
+    },
+    {
+      "competition": "La Liga",
+      "season": "2025-2026",
+      "match_date": "2026-03-21",
+      "home_team": "Osasuna",
+      "away_team": "Girona",
+      "home_goals": 1,
+      "away_goals": 0,
+      "home_xg": 2.2623,
+      "away_xg": 0.2321,
+      "source_xg": "understat",
+      "understat_id": "29447"
+    },
+    {
+      "competition": "La Liga",
+      "season": "2025-2026",
+      "match_date": "2026-03-21",
+      "home_team": "Sevilla",
+      "away_team": "Valencia",
+      "home_goals": 0,
+      "away_goals": 2,
+      "home_xg": 0.5054,
+      "away_xg": 1.7133,
+      "source_xg": "understat",
+      "understat_id": "29444"
+    },
+    {
+      "competition": "La Liga",
+      "season": "2025-2026",
+      "match_date": "2026-03-22",
+      "home_team": "Barcelona",
+      "away_team": "Rayo Vallecano",
+      "home_goals": 1,
+      "away_goals": 0,
+      "home_xg": 1.9221,
+      "away_xg": 2.1963,
+      "source_xg": "understat",
+      "understat_id": "29441"
+    },
+    {
+      "competition": "La Liga",
+      "season": "2025-2026",
+      "match_date": "2026-03-22",
+      "home_team": "Celta Vigo",
+      "away_team": "Alaves",
+      "home_goals": 3,
+      "away_goals": 4,
+      "home_xg": 1.7097,
+      "away_xg": 1.6722,
+      "source_xg": "understat",
+      "understat_id": "29445"
+    },
+    {
+      "competition": "La Liga",
+      "season": "2025-2026",
+      "match_date": "2026-03-22",
+      "home_team": "Athletic Club",
+      "away_team": "Real Betis",
+      "home_goals": 2,
+      "away_goals": 1,
+      "home_xg": 1.9271,
+      "away_xg": 0.5912,
+      "source_xg": "understat",
+      "understat_id": "29439"
+    },
+    {
+      "competition": "La Liga",
+      "season": "2025-2026",
+      "match_date": "2026-03-22",
+      "home_team": "Real Madrid",
+      "away_team": "Atletico Madrid",
+      "home_goals": 3,
+      "away_goals": 2,
+      "home_xg": 2.9661,
+      "away_xg": 1.4023,
+      "source_xg": "understat",
+      "understat_id": "29446"
+    }
+  ]
+}
