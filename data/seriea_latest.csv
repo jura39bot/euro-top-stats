@@ -1,11 +1,11 @@
 competition,season,match_date,home_team,away_team,home_goals,away_goals,home_xg,away_xg,source_xg,understat_id
-Serie A,2025-2026,2026-03-20,Cagliari,Napoli,0,1,0.2412,2.2739,understat,30136
-Serie A,2025-2026,2026-03-20,Genoa,Udinese,0,2,1.3033,0.8658,understat,30139
-Serie A,2025-2026,2026-03-21,Parma Calcio 1913,Cremonese,0,2,0.2878,0.7818,understat,30142
-Serie A,2025-2026,2026-03-21,AC Milan,Torino,3,2,1.4434,2.3721,understat,30141
-Serie A,2025-2026,2026-03-21,Juventus,Sassuolo,1,1,2.2546,0.8455,understat,30140
-Serie A,2025-2026,2026-03-22,Como,Pisa,5,0,1.8215,0.3097,understat,30137
-Serie A,2025-2026,2026-03-22,Atalanta,Verona,1,0,1.7425,0.7658,understat,30134
-Serie A,2025-2026,2026-03-22,Bologna,Lazio,0,2,1.3292,2.144,understat,30135
-Serie A,2025-2026,2026-03-22,Roma,Lecce,1,0,1.0936,0.807,understat,30143
-Serie A,2025-2026,2026-03-22,Fiorentina,Inter,1,1,1.8143,1.4009,understat,30138
+Serie A,2025-2026,2026-04-04,Sassuolo,Cagliari,2,1,0.4834,1.9012,understat,30151
+Serie A,2025-2026,2026-04-04,Verona,Fiorentina,0,1,0.9226,0.3087,understat,30153
+Serie A,2025-2026,2026-04-04,Lazio,Parma Calcio 1913,1,1,0.2691,0.3606,understat,30147
+Serie A,2025-2026,2026-04-05,Cremonese,Bologna,1,2,1.3964,1.5897,understat,30144
+Serie A,2025-2026,2026-04-05,Pisa,Torino,0,1,0.3094,1.7261,understat,30150
+Serie A,2025-2026,2026-04-05,Inter,Roma,5,2,2.2544,0.94,understat,30145
+Serie A,2025-2026,2026-04-06,Udinese,Como,0,0,1.0667,0.7864,understat,30152
+Serie A,2025-2026,2026-04-06,Lecce,Atalanta,0,3,0.3643,2.8159,understat,30148
+Serie A,2025-2026,2026-04-06,Juventus,Genoa,2,0,2.6028,1.4881,understat,30146
+Serie A,2025-2026,2026-04-06,Napoli,AC Milan,1,0,0.8724,0.8106,understat,30149
