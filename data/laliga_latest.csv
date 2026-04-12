@@ -1,11 +1,10 @@
 competition,season,match_date,home_team,away_team,home_goals,away_goals,home_xg,away_xg,source_xg,understat_id
-La Liga,2025-2026,2026-04-03,Rayo Vallecano,Elche,1,0,1.5149,0.602,understat,29456
-La Liga,2025-2026,2026-04-04,Real Sociedad,Levante,2,0,2.964,0.3202,understat,29457
-La Liga,2025-2026,2026-04-04,Mallorca,Real Madrid,2,1,1.0388,1.5145,understat,29452
-La Liga,2025-2026,2026-04-04,Real Betis,Espanyol,0,0,2.0021,0.1441,understat,29450
-La Liga,2025-2026,2026-04-04,Atletico Madrid,Barcelona,1,2,0.9193,2.6858,understat,29449
-La Liga,2025-2026,2026-04-05,Getafe,Athletic Club,2,0,1.9634,0.5244,understat,29455
-La Liga,2025-2026,2026-04-05,Valencia,Celta Vigo,2,3,0.721,1.457,understat,29454
-La Liga,2025-2026,2026-04-05,Real Oviedo,Sevilla,1,0,0.7851,0.8407,understat,29453
-La Liga,2025-2026,2026-04-05,Alaves,Osasuna,2,2,1.6597,1.6115,understat,29448
-La Liga,2025-2026,2026-04-06,Girona,Villarreal,1,0,0.6535,0.4435,understat,29451
+La Liga,2025-2026,2026-04-10,Real Madrid,Girona,1,1,1.9809,0.4667,understat,29462
+La Liga,2025-2026,2026-04-11,Real Sociedad,Alaves,3,3,1.295,1.206,understat,29464
+La Liga,2025-2026,2026-04-11,Elche,Valencia,1,0,1.0349,2.7689,understat,29465
+La Liga,2025-2026,2026-04-11,Barcelona,Espanyol,4,1,3.3079,1.1313,understat,29459
+La Liga,2025-2026,2026-04-11,Sevilla,Atletico Madrid,2,1,1.6578,0.8555,understat,29463
+La Liga,2025-2026,2026-04-12,Osasuna,Real Betis,1,1,1.5293,0.4112,understat,29460
+La Liga,2025-2026,2026-04-12,Mallorca,Rayo Vallecano,3,0,2.5466,1.9705,understat,29466
+La Liga,2025-2026,2026-04-12,Celta Vigo,Real Oviedo,0,3,1.1588,2.1285,understat,29467
+La Liga,2025-2026,2026-04-12,Athletic Club,Villarreal,1,2,1.3194,1.5514,understat,29458
