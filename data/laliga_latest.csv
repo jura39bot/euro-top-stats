@@ -1,10 +1,16 @@
 competition,season,match_date,home_team,away_team,home_goals,away_goals,home_xg,away_xg,source_xg,understat_id
-La Liga,2025-2026,2026-04-10,Real Madrid,Girona,1,1,1.9809,0.4667,understat,29462
-La Liga,2025-2026,2026-04-11,Real Sociedad,Alaves,3,3,1.295,1.206,understat,29464
-La Liga,2025-2026,2026-04-11,Elche,Valencia,1,0,1.0349,2.7689,understat,29465
-La Liga,2025-2026,2026-04-11,Barcelona,Espanyol,4,1,3.3079,1.1313,understat,29459
-La Liga,2025-2026,2026-04-11,Sevilla,Atletico Madrid,2,1,1.6578,0.8555,understat,29463
-La Liga,2025-2026,2026-04-12,Osasuna,Real Betis,1,1,1.5293,0.4112,understat,29460
-La Liga,2025-2026,2026-04-12,Mallorca,Rayo Vallecano,3,0,2.5466,1.9705,understat,29466
-La Liga,2025-2026,2026-04-12,Celta Vigo,Real Oviedo,0,3,1.1588,2.1285,understat,29467
-La Liga,2025-2026,2026-04-12,Athletic Club,Villarreal,1,2,1.3194,1.5514,understat,29458
+La Liga,2025-2026,2026-04-22,Elche,Atletico Madrid,3,2,3.6285,0.8468,understat,29484
+La Liga,2025-2026,2026-04-22,Real Sociedad,Getafe,0,1,1.9016,0.2152,understat,29487
+La Liga,2025-2026,2026-04-22,Barcelona,Celta Vigo,1,0,1.5445,1.0739,understat,29479
+La Liga,2025-2026,2026-04-23,Levante,Sevilla,2,0,1.2081,0.4445,understat,29480
+La Liga,2025-2026,2026-04-23,Rayo Vallecano,Espanyol,1,0,2.0698,1.6853,understat,29486
+La Liga,2025-2026,2026-04-23,Real Oviedo,Villarreal,1,1,2.5285,3.2502,understat,29482
+La Liga,2025-2026,2026-04-24,Real Betis,Real Madrid,1,1,1.0195,1.0958,understat,29474
+La Liga,2025-2026,2026-04-25,Alaves,Mallorca,2,1,1.4077,0.2215,understat,29473
+La Liga,2025-2026,2026-04-25,Getafe,Barcelona,0,2,0.6077,2.0517,understat,29469
+La Liga,2025-2026,2026-04-25,Valencia,Girona,2,1,2.3126,1.388,understat,29472
+La Liga,2025-2026,2026-04-25,Atletico Madrid,Athletic Club,3,2,2.4796,0.9706,understat,29468
+La Liga,2025-2026,2026-04-26,Rayo Vallecano,Real Sociedad,3,3,3.185,2.3968,understat,29475
+La Liga,2025-2026,2026-04-26,Real Oviedo,Elche,1,2,0.7723,0.6218,understat,29471
+La Liga,2025-2026,2026-04-26,Osasuna,Sevilla,2,1,2.1425,0.5538,understat,29476
+La Liga,2025-2026,2026-04-26,Villarreal,Celta Vigo,2,1,2.409,2.053,understat,29470
