@@ -1,9 +1,9 @@
 competition,season,match_date,home_team,away_team,home_goals,away_goals,home_xg,away_xg,source_xg,understat_id
-Serie A,2025-2026,2026-04-24,Napoli,Cremonese,4,0,3.2406,0.4736,understat,30180
-Serie A,2025-2026,2026-04-25,Parma Calcio 1913,Pisa,1,0,1.3107,1.5639,understat,30181
-Serie A,2025-2026,2026-04-25,Bologna,Roma,0,2,0.4791,1.6563,understat,30174
-Serie A,2025-2026,2026-04-25,Verona,Lecce,0,0,0.2493,1.206,understat,30183
-Serie A,2025-2026,2026-04-26,Fiorentina,Sassuolo,0,0,2.1901,0.5976,understat,30176
-Serie A,2025-2026,2026-04-26,Genoa,Como,0,2,0.6672,1.19,understat,30177
-Serie A,2025-2026,2026-04-26,Torino,Inter,2,2,2.4277,1.6479,understat,30182
-Serie A,2025-2026,2026-04-26,AC Milan,Juventus,0,0,0.6163,0.4497,understat,30179
+Serie A,2025-2026,2026-05-01,Pisa,Lecce,1,2,2.0672,1.3594,understat,30190
+Serie A,2025-2026,2026-05-02,Udinese,Torino,2,0,2.169,0.8129,understat,30193
+Serie A,2025-2026,2026-05-02,Como,Napoli,0,0,1.7972,0.8473,understat,30186
+Serie A,2025-2026,2026-05-02,Atalanta,Genoa,0,0,1.6608,0.4388,understat,30184
+Serie A,2025-2026,2026-05-03,Bologna,Cagliari,0,0,0.6845,0.8719,understat,30185
+Serie A,2025-2026,2026-05-03,Sassuolo,AC Milan,2,0,2.235,0.2886,understat,30192
+Serie A,2025-2026,2026-05-03,Juventus,Verona,1,1,2.6862,0.1972,understat,30189
+Serie A,2025-2026,2026-05-03,Inter,Parma Calcio 1913,2,0,2.0157,0.4522,understat,30188
