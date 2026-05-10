@@ -1,10 +1,2 @@
 competition,season,match_date,home_team,away_team,home_goals,away_goals,home_xg,away_xg,source_xg,understat_id
-Ligue 1,2025-2026,2026-05-03,Lille,Le Havre,1,1,1.9163,0.3343,understat,29818
-Ligue 1,2025-2026,2026-05-03,Metz,Monaco,1,2,1.1478,1.5888,understat,29820
-Ligue 1,2025-2026,2026-05-03,Nantes,Marseille,3,0,3.0718,1.5516,understat,29821
-Ligue 1,2025-2026,2026-05-03,Nice,Lens,1,1,1.3386,1.5524,understat,29822
-Ligue 1,2025-2026,2026-05-03,Paris Saint Germain,Lorient,2,2,2.9841,1.2774,understat,29824
-Ligue 1,2025-2026,2026-05-03,Auxerre,Angers,3,1,2.5499,2.1678,understat,29817
-Ligue 1,2025-2026,2026-05-03,Paris FC,Brest,4,0,2.8609,0.7331,understat,29823
-Ligue 1,2025-2026,2026-05-03,Strasbourg,Toulouse,1,2,0.4053,1.6766,understat,29825
-Ligue 1,2025-2026,2026-05-03,Lyon,Rennes,4,2,2.6657,1.065,understat,29819
+Ligue 1,2025-2026,2026-05-08,Lens,Nantes,1,0,0.7191,1.0672,understat,29829

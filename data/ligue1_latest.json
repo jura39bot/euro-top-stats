@@ -2,127 +2,23 @@
   "meta": {
     "competition": "Ligue 1",
     "season": "2025-2026",
-    "matches": 9,
+    "matches": 1,
     "source_xg": "understat",
-    "generated_at": "2026-05-03T21:59:09Z"
+    "generated_at": "2026-05-10T21:59:09Z"
   },
   "matches": [
     {
       "competition": "Ligue 1",
       "season": "2025-2026",
-      "match_date": "2026-05-03",
-      "home_team": "Lille",
-      "away_team": "Le Havre",
+      "match_date": "2026-05-08",
+      "home_team": "Lens",
+      "away_team": "Nantes",
       "home_goals": 1,
-      "away_goals": 1,
-      "home_xg": 1.9163,
-      "away_xg": 0.3343,
-      "source_xg": "understat",
-      "understat_id": "29818"
-    },
-    {
-      "competition": "Ligue 1",
-      "season": "2025-2026",
-      "match_date": "2026-05-03",
-      "home_team": "Metz",
-      "away_team": "Monaco",
-      "home_goals": 1,
-      "away_goals": 2,
-      "home_xg": 1.1478,
-      "away_xg": 1.5888,
-      "source_xg": "understat",
-      "understat_id": "29820"
-    },
-    {
-      "competition": "Ligue 1",
-      "season": "2025-2026",
-      "match_date": "2026-05-03",
-      "home_team": "Nantes",
-      "away_team": "Marseille",
-      "home_goals": 3,
       "away_goals": 0,
-      "home_xg": 3.0718,
-      "away_xg": 1.5516,
+      "home_xg": 0.7191,
+      "away_xg": 1.0672,
       "source_xg": "understat",
-      "understat_id": "29821"
-    },
-    {
-      "competition": "Ligue 1",
-      "season": "2025-2026",
-      "match_date": "2026-05-03",
-      "home_team": "Nice",
-      "away_team": "Lens",
-      "home_goals": 1,
-      "away_goals": 1,
-      "home_xg": 1.3386,
-      "away_xg": 1.5524,
-      "source_xg": "understat",
-      "understat_id": "29822"
-    },
-    {
-      "competition": "Ligue 1",
-      "season": "2025-2026",
-      "match_date": "2026-05-03",
-      "home_team": "Paris Saint Germain",
-      "away_team": "Lorient",
-      "home_goals": 2,
-      "away_goals": 2,
-      "home_xg": 2.9841,
-      "away_xg": 1.2774,
-      "source_xg": "understat",
-      "understat_id": "29824"
-    },
-    {
-      "competition": "Ligue 1",
-      "season": "2025-2026",
-      "match_date": "2026-05-03",
-      "home_team": "Auxerre",
-      "away_team": "Angers",
-      "home_goals": 3,
-      "away_goals": 1,
-      "home_xg": 2.5499,
-      "away_xg": 2.1678,
-      "source_xg": "understat",
-      "understat_id": "29817"
-    },
-    {
-      "competition": "Ligue 1",
-      "season": "2025-2026",
-      "match_date": "2026-05-03",
-      "home_team": "Paris FC",
-      "away_team": "Brest",
-      "home_goals": 4,
-      "away_goals": 0,
-      "home_xg": 2.8609,
-      "away_xg": 0.7331,
-      "source_xg": "understat",
-      "understat_id": "29823"
-    },
-    {
-      "competition": "Ligue 1",
-      "season": "2025-2026",
-      "match_date": "2026-05-03",
-      "home_team": "Strasbourg",
-      "away_team": "Toulouse",
-      "home_goals": 1,
-      "away_goals": 2,
-      "home_xg": 0.4053,
-      "away_xg": 1.6766,
-      "source_xg": "understat",
-      "understat_id": "29825"
-    },
-    {
-      "competition": "Ligue 1",
-      "season": "2025-2026",
-      "match_date": "2026-05-03",
-      "home_team": "Lyon",
-      "away_team": "Rennes",
-      "home_goals": 4,
-      "away_goals": 2,
-      "home_xg": 2.6657,
-      "away_xg": 1.065,
-      "source_xg": "understat",
-      "understat_id": "29819"
+      "understat_id": "29829"
     }
   ]
 }
