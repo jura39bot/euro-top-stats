@@ -1,10 +1,9 @@
 competition,season,match_date,home_team,away_team,home_goals,away_goals,home_xg,away_xg,source_xg,understat_id
-Premier League,2025-2026,2026-05-09,Liverpool,Chelsea,1,1,0.6232,0.5972,understat,29132
-Premier League,2025-2026,2026-05-09,Brighton,Wolverhampton Wanderers,3,0,2.2243,0.5156,understat,29128
-Premier League,2025-2026,2026-05-09,Fulham,Bournemouth,0,1,1.2433,0.998,understat,29131
-Premier League,2025-2026,2026-05-09,Sunderland,Manchester United,0,0,1.2376,0.536,understat,29135
-Premier League,2025-2026,2026-05-09,Manchester City,Brentford,3,0,4.3743,0.67,understat,29133
-Premier League,2025-2026,2026-05-10,Burnley,Aston Villa,2,2,1.7123,1.7549,understat,29129
-Premier League,2025-2026,2026-05-10,Crystal Palace,Everton,2,2,3.2883,2.1027,understat,29130
-Premier League,2025-2026,2026-05-10,Nottingham Forest,Newcastle United,1,1,1.4643,1.6507,understat,29134
-Premier League,2025-2026,2026-05-10,West Ham,Arsenal,0,1,1.3201,1.4295,understat,29137
+Premier League,2025-2026,2026-05-13,Manchester City,Crystal Palace,3,0,1.9568,0.4289,understat,29084
+Premier League,2025-2026,2026-05-15,Aston Villa,Liverpool,4,2,2.5252,1.5503,understat,29140
+Premier League,2025-2026,2026-05-17,Manchester United,Nottingham Forest,3,2,4.2853,1.8442,understat,29145
+Premier League,2025-2026,2026-05-17,Brentford,Crystal Palace,2,2,1.5456,1.8227,understat,29141
+Premier League,2025-2026,2026-05-17,Everton,Sunderland,1,3,1.3218,1.2838,understat,29143
+Premier League,2025-2026,2026-05-17,Leeds,Brighton,1,0,0.7478,2.2324,understat,29144
+Premier League,2025-2026,2026-05-17,Wolverhampton Wanderers,Fulham,1,1,1.4972,1.4841,understat,29147
+Premier League,2025-2026,2026-05-17,Newcastle United,West Ham,3,1,2.1336,0.9578,understat,29146
