@@ -1,18 +1,11 @@
 competition,season,match_date,home_team,away_team,home_goals,away_goals,home_xg,away_xg,source_xg,understat_id
-La Liga,2025-2026,2026-05-13,Espanyol,Athletic Club,2,0,0.8471,0.8865,understat,29513
-La Liga,2025-2026,2026-05-13,Villarreal,Sevilla,2,3,0.9523,0.9175,understat,29516
-La Liga,2025-2026,2026-05-13,Alaves,Barcelona,1,0,0.9535,0.3564,understat,29508
-La Liga,2025-2026,2026-05-13,Getafe,Mallorca,3,1,1.8211,0.4121,understat,29511
-La Liga,2025-2026,2026-05-14,Valencia,Rayo Vallecano,1,1,0.9383,1.5304,understat,29515
-La Liga,2025-2026,2026-05-14,Girona,Real Sociedad,1,1,2.6859,0.5532,understat,29512
-La Liga,2025-2026,2026-05-14,Real Madrid,Real Oviedo,2,0,1.7409,1.1868,understat,29517
-La Liga,2025-2026,2026-05-17,Athletic Club,Celta Vigo,1,1,2.9037,0.3079,understat,29518
-La Liga,2025-2026,2026-05-17,Barcelona,Real Betis,3,1,1.5995,0.9855,understat,29519
-La Liga,2025-2026,2026-05-17,Atletico Madrid,Girona,1,0,2.7077,2.0015,understat,29520
-La Liga,2025-2026,2026-05-17,Real Sociedad,Valencia,3,4,1.3027,1.9933,understat,29521
-La Liga,2025-2026,2026-05-17,Real Oviedo,Alaves,0,1,0.6313,1.2829,understat,29522
-La Liga,2025-2026,2026-05-17,Osasuna,Espanyol,1,2,1.8115,0.9471,understat,29523
-La Liga,2025-2026,2026-05-17,Sevilla,Real Madrid,0,1,0.6835,1.4738,understat,29524
-La Liga,2025-2026,2026-05-17,Levante,Mallorca,2,0,2.4368,0.439,understat,29525
-La Liga,2025-2026,2026-05-17,Rayo Vallecano,Villarreal,2,0,1.925,0.655,understat,29526
-La Liga,2025-2026,2026-05-17,Elche,Getafe,1,0,0.6918,0.0944,understat,29527
+La Liga,2025-2026,2026-05-23,Alaves,Rayo Vallecano,1,2,1.7247,1.6469,understat,29528
+La Liga,2025-2026,2026-05-23,Real Betis,Levante,2,1,1.8664,2.3672,understat,29529
+La Liga,2025-2026,2026-05-23,Celta Vigo,Sevilla,1,0,1.618,0.7557,understat,29530
+La Liga,2025-2026,2026-05-23,Espanyol,Real Sociedad,1,1,2.1431,1.2324,understat,29531
+La Liga,2025-2026,2026-05-23,Real Madrid,Athletic Club,4,2,1.954,1.4543,understat,29532
+La Liga,2025-2026,2026-05-23,Valencia,Barcelona,3,1,1.8337,1.2934,understat,29534
+La Liga,2025-2026,2026-05-23,Girona,Elche,1,1,0.668,0.4954,understat,29535
+La Liga,2025-2026,2026-05-23,Getafe,Osasuna,1,0,0.2641,0.8,understat,29536
+La Liga,2025-2026,2026-05-23,Mallorca,Real Oviedo,3,0,3.5077,0.2432,understat,29537
+La Liga,2025-2026,2026-05-24,Villarreal,Atletico Madrid,5,1,2.8044,1.5843,understat,29533
