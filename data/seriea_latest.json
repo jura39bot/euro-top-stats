@@ -2,9 +2,9 @@
   "meta": {
     "competition": "Serie A",
     "season": "2025-2026",
-    "matches": 9,
+    "matches": 10,
     "source_xg": "understat",
-    "generated_at": "2026-05-24T21:59:16Z"
+    "generated_at": "2026-05-31T21:59:12Z"
   },
   "matches": [
     {
@@ -110,6 +110,19 @@
       "away_xg": 3.4362,
       "source_xg": "understat",
       "understat_id": "30219"
+    },
+    {
+      "competition": "Serie A",
+      "season": "2025-2026",
+      "match_date": "2026-05-24",
+      "home_team": "Torino",
+      "away_team": "Juventus",
+      "home_goals": 2,
+      "away_goals": 2,
+      "home_xg": 0.9501,
+      "away_xg": 2.5343,
+      "source_xg": "understat",
+      "understat_id": "30222"
     },
     {
       "competition": "Serie A",
