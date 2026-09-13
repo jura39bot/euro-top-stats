@@ -2,9 +2,9 @@
   "meta": {
     "competition": "Ligue 1",
     "season": "2025-2026",
-    "matches": 10,
+    "matches": 11,
     "source_xg": "understat",
-    "generated_at": "2026-07-12T21:59:07Z"
+    "generated_at": "2026-09-13T13:45:55Z"
   },
   "matches": [
     {
@@ -32,6 +32,19 @@
       "away_xg": 0.9439,
       "source_xg": "understat",
       "understat_id": "29792"
+    },
+    {
+      "competition": "Ligue 1",
+      "season": "2025-2026",
+      "match_date": "2026-05-17",
+      "home_team": "Nantes",
+      "away_team": "Toulouse",
+      "home_goals": 0,
+      "away_goals": 0,
+      "home_xg": 0.084,
+      "away_xg": 0.319,
+      "source_xg": "understat",
+      "understat_id": "29840"
     },
     {
       "competition": "Ligue 1",
