@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "competition": "Europa League",
+    "season": "2024-2025 (plan free)",
+    "matches": 5,
+    "source_xg": "api-football",
+    "generated_at": "2026-10-22T22:01:23Z"
+  },
+  "matches": [
+    {
+      "competition": "Europa League",
+      "season": "2024-2025 (plan free)",
+      "match_date": "2025-05-01",
+      "home_team": "Tottenham",
+      "away_team": "Bodo/Glimt",
+      "home_goals": 3,
+      "away_goals": 1,
+      "home_xg": 3.06,
+      "away_xg": 0.26,
+      "source_xg": "api-football",
+      "understat_id": null
+    },
+    {
+      "competition": "Europa League",
+      "season": "2024-2025 (plan free)",
+      "match_date": "2025-05-01",
+      "home_team": "Athletic Club",
+      "away_team": "Manchester United",
+      "home_goals": 0,
+      "away_goals": 3,
+      "home_xg": 1.11,
+      "away_xg": 2.55,
+      "source_xg": "api-football",
+      "understat_id": null
+    },
+    {
+      "competition": "Europa League",
+      "season": "2024-2025 (plan free)",
+      "match_date": "2025-05-08",
+      "home_team": "Manchester United",
+      "away_team": "Athletic Club",
+      "home_goals": 4,
+      "away_goals": 1,
+      "home_xg": 2.19,
+      "away_xg": 0.81,
+      "source_xg": "api-football",
+      "understat_id": null
+    },
+    {
+      "competition": "Europa League",
+      "season": "2024-2025 (plan free)",
+      "match_date": "2025-05-08",
+      "home_team": "Bodo/Glimt",
+      "away_team": "Tottenham",
+      "home_goals": 0,
+      "away_goals": 2,
+      "home_xg": 0.43,
+      "away_xg": 0.77,
+      "source_xg": "api-football",
+      "understat_id": null
+    },
+    {
+      "competition": "Europa League",
+      "season": "2024-2025 (plan free)",
+      "match_date": "2025-05-21",
+      "home_team": "Tottenham",
+      "away_team": "Manchester United",
+      "home_goals": 1,
+      "away_goals": 0,
+      "home_xg": 1.01,
+      "away_xg": 0.97,
+      "source_xg": "api-football",
+      "understat_id": null
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "competition": "Conference League",
+    "season": "2024-2025 (plan free)",
+    "matches": 2,
+    "source_xg": "api-football",
+    "generated_at": "2026-10-22T22:01:25Z"
+  },
+  "matches": [
+    {
+      "competition": "Conference League",
+      "season": "2024-2025 (plan free)",
+      "match_date": "2025-05-08",
+      "home_team": "Chelsea",
+      "away_team": "Djurgardens IF",
+      "home_goals": 1,
+      "away_goals": 0,
+      "home_xg": 1.33,
+      "away_xg": 0.52,
+      "source_xg": "api-football",
+      "understat_id": null
+    },
+    {
+      "competition": "Conference League",
+      "season": "2024-2025 (plan free)",
+      "match_date": "2025-05-28",
+      "home_team": "Real Betis",
+      "away_team": "Chelsea",
+      "home_goals": 1,
+      "away_goals": 4,
+      "home_xg": null,
+      "away_xg": null,
+      "source_xg": "api-football",
+      "understat_id": null
+    }
+  ]
+}

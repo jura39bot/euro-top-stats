@@ -1,0 +1,3 @@
+competition,season,match_date,home_team,away_team,home_goals,away_goals,home_xg,away_xg,source_xg,understat_id
+Conference League,2024-2025 (plan free),2025-05-08,Chelsea,Djurgardens IF,1,0,1.33,0.52,api-football,
+Conference League,2024-2025 (plan free),2025-05-28,Real Betis,Chelsea,1,4,,,api-football,
